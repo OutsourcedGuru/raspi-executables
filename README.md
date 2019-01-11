@@ -114,10 +114,10 @@ The Go language is relatively new and compiles into an executable.
 
 1. Begin with a standard Raspbian installation
 2. Remote into the Pi using `ssh`, for example
-3. `mkdir ~/tmp && cd ~/tmp`
-4. `wget https://dl.google.com/go/go1.10.7.linux-armv6l.tar.gz`
-5. `sudo tar -C /usr/local -xzf go1.10.7.linux-armv6l.tar.gz`
-6. `nano ~/.profile`
+3. [Required only once]: `mkdir ~/tmp && cd ~/tmp`
+4. [Required only once]: `wget https://dl.google.com/go/go1.10.7.linux-armv6l.tar.gz`
+5. [Required only once]: `sudo tar -C /usr/local -xzf go1.10.7.linux-armv6l.tar.gz`
+6. [Required only once]: `nano ~/.profile`
 
 #### Add to end of file:
 
@@ -125,13 +125,13 @@ The Go language is relatively new and compiles into an executable.
 export PATH=$PATH:/usr/local/go/bin
 ```
 
-&nbsp;7. `source ~/.profile`
+&nbsp;7. [Required only once]: `source ~/.profile`
 
-&nbsp;8. `go version`
+&nbsp;8. [Required only once]: `go version`
 
 &nbsp;9. `mkdir ~/scripts/hello-go-src && cd ~/scripts/hello-go-src`
 
-&nbsp;10. `rm -Rf ~/tmp`
+&nbsp;10. [Required only once]: `rm -Rf ~/tmp`
 
 &nbsp;11. `touch hello.go && nano hello.go`
 
@@ -171,15 +171,15 @@ Zeit.co provides a great Node compiler, allowing you to distribute just an execu
 
 1. Begin with a standard Raspbian installation
 2. Remote into the Pi using `ssh`, for example
-3. `mkdir ~/tmp && cd ~/tmp`
-4. `wget https://nodejs.org/dist/v8.9.3/node-v8.9.3-linux-armv7l.tar.xz`
-5. `tar -xvf node-v8.9.3-linux-armv7l.tar.xz`
-6. `cd node-v8.9.3-linux-armv7l`
-7. `sudo cp -R * /usr/local/`
-8. `node --version && npm --version`
-9. `sudo npm install -g pkg`
+3. [Required only once]: `mkdir ~/tmp && cd ~/tmp`
+4. [Required only once]: `wget https://nodejs.org/dist/v8.9.3/node-v8.9.3-linux-armv7l.tar.xz`
+5. [Required only once]: `tar -xvf node-v8.9.3-linux-armv7l.tar.xz`
+6. [Required only once]: `cd node-v8.9.3-linux-armv7l`
+7. [Required only once]: `sudo cp -R * /usr/local/`
+8. [Required only once]: `node --version && npm --version`
+9. [Required only once]: `sudo npm install -g pkg`
 10. `mkdir ~/scripts/hello-js-src && cd ~/scripts/hello-js-src`
-11. `rm -Rf ~/tmp`
+11. [Required only once]: `rm -Rf ~/tmp`
 12. `touch hello.js && nano hello.js`
 
 ```
@@ -219,7 +219,7 @@ Here's a table of the executable file sizes as produced from the four `Hello, Wo
 
 |Description|Version|Author|Last Update|
 |:---|:---|:---|:---|
-|raspi-executables|v1.0.1|OutsourcedGuru|January 10, 2019|
+|raspi-executables|v1.0.2|OutsourcedGuru|January 11, 2019|
 
 |Donate||Cryptocurrency|
 |:-----:|---|:--------:|
